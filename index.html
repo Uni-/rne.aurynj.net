@@ -5,24 +5,110 @@
 <title>R&amp;E</title>
 </head>
 <style type="text/css">
+body, margin, .Container {
+	margin: 0;
+	padding: 0;
+}
 .Widget-top {
+	padding: 0 1em;
 	position: fixed;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 3em;
-	background: rgba(211, 211, 211, 0.5);
+	height: 80px;
+	line-height: 80px;
+	background: rgba(240, 240, 240, .5);
+}
+.Widget-top > * {
+	display: inline-block;
+	line-height: 0;
+	vertical-align: middle;
 }
 .Widget-top h1, .Widget-top h2, .Widget-top h3, .Widget-top h4, .Widget-top h5, .Widget-top h6 {
-	display: inline;
+	margin: 0;
+	display: inline-block;
 }
 .Widget-top .Widget-top-Separator {
 	display: inline;
+	margin: 1em;
+}
+.Widget-before-contents {
+	position: sticky;
+	top: 80px;
+	margin: 120px 20px 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	border: rgba(0, 0, 0, .1) solid;
+	border-width: 1px;
+	border-radius: 0 0 20px 20px;
+	padding: 19px;
+	height: 39px;
+	line-height: 39px;
+	background: white;
+}
+.Widget-contents {
+	margin: 40px 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	box-sizing: border-box;
+	border: rgba(0, 0, 0, .1) solid;
+	border-width: 1px;
+	border-radius: 20px;
+	padding: 19px;
+	clear: both;
+}
+.Widget-after-contents {
+	position: sticky;
+	bottom: 20px;
+	margin: 40px 20px 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	border: rgba(0, 0, 0, .1) solid;
+	border-width: 1px;
+	border-radius: 20px 20px 0 0;
+	padding: 19px;
+	height: 29px;
+	line-height: 29px;
+	background: white;
+}
+.Widget-bottom {
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2em;
+	background: rgba(200, 200, 200, .8);
+}
+.Article h1, .Article h2, .Article h3, .Article h4, .Article h5, .Article h6 {
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0;
+	display: inline-block;
 }
 </style>
 <body>
+<div class="All">
 <div class="Widget-top">
-<h1>R&amp;E -- Reasoning and Emotion</h1>
-<hr class="Widget-top-Separator" />
-<a href="http://aurynj.net/">aurynj.net</a>
+<h1>R&amp;E &mdash; Reasoning and Emotion</h1><hr class="Widget-top-Separator" /><a href="http://aurynj.net/">aurynj.net</a>
+</div>
+<article class="Article">
+<div class="Widget-before-contents">
+<h1>R&amp;E Lorem Ipsum</h1>
+</div>
+<div class="Widget-contents">
+<p>개인적인 느낌과 생각을 담은 이야기들을 모으기 위한 공간입니다.</p>
+<h2>Lorem Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate sodales dolor, at sollicitudin erat mollis vitae. Nulla dictum porttitor eros, sed posuere felis interdum in. Quisque dapibus diam nulla, sed consectetur dui commodo in. Ut turpis lorem, tempus id varius eget, iaculis nec diam. Nunc condimentum sodales accumsan. Aliquam lacinia in tortor at ornare. Maecenas et ultricies enim, id malesuada tellus. Praesent mollis vel velit ac porta. Vestibulum convallis faucibus arcu eget lacinia. Proin eu condimentum massa, a eleifend sapien. Suspendisse quis sodales leo. Nullam consectetur augue ut porttitor blandit. Maecenas in massa ornare, venenatis lacus id, mattis orci. Vestibulum imperdiet dui non risus tempus sodales. Donec sagittis consequat elit, id imperdiet erat fringilla quis.</p>
+<p>In fringilla leo id eros porttitor, et tristique turpis dapibus. Morbi facilisis est odio, feugiat scelerisque nulla interdum eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna et massa efficitur congue id et eros. Aenean suscipit nulla semper tortor finibus hendrerit. Ut nisl augue, porttitor sed porta mattis, porttitor eget est. Pellentesque consectetur dolor et rutrum ultricies. Etiam nibh mi, laoreet id cursus vitae, viverra eget risus. Nunc fermentum nibh eu sapien blandit, non sagittis nisi suscipit. Proin sed mauris ex. Praesent lorem leo, ullamcorper ac risus a, pretium dignissim velit. Fusce et ornare massa. Curabitur laoreet ipsum non arcu egestas pretium. Donec sit amet mi in orci bibendum pretium vel a orci.</p>
+<p>Nulla facilisi. Nunc maximus eget sapien in laoreet. In porta tincidunt diam et pharetra. Nulla facilisi. Proin odio magna, facilisis eu quam id, tincidunt semper lectus. Maecenas sit amet tristique tellus. Suspendisse eget ligula lorem. Suspendisse tortor dui, venenatis a lectus eu, molestie finibus ex. Nullam in elit neque. Sed ligula urna, consequat ac elit sit amet, luctus molestie purus. Quisque vehicula, urna ut viverra condimentum, leo lectus porttitor nisl, a commodo mi magna vitae elit. Sed aliquet quam est, a lobortis sem volutpat a. Phasellus iaculis volutpat leo condimentum posuere. Mauris sit amet tortor placerat, vestibulum enim a, molestie nibh. Nam posuere erat magna, sit amet euismod arcu tincidunt vitae. Duis lacinia, urna et vestibulum auctor, neque diam posuere arcu, at blandit orci magna non metus.</p>
+<p>Suspendisse eu leo feugiat, lobortis nisl ut, blandit lectus. Nulla fringilla ultricies ex, vel placerat ipsum maximus ut. Nulla imperdiet ipsum at maximus sodales. Ut varius libero purus, non euismod diam dapibus a. Vestibulum ac blandit quam, quis vehicula risus. Etiam rutrum pulvinar porttitor. Pellentesque semper erat eu efficitur ultricies. Proin sed feugiat sapien. Sed ornare, sem et dignissim lobortis, ex dolor volutpat mi, eget mollis odio urna at mauris. Etiam augue mi, condimentum ac tristique a, semper ac sapien.</p>
+<p>Duis egestas finibus lectus, in egestas quam venenatis id. Maecenas vel purus ac ante consectetur accumsan non in erat. Proin consectetur viverra metus, id tristique neque tincidunt lacinia. Aenean finibus mi non magna euismod tempor. Donec et augue ante. Suspendisse lacinia sem a mi sollicitudin, id lobortis massa dapibus. Ut maximus, nisi et posuere tempor, mi nisl condimentum nisi, ut blandit lorem nunc sed tellus. Duis ut euismod dui. Pellentesque metus libero, placerat non dignissim at, pretium in sapien.</p>
+<p>auto generated material of lipsum.com.</p>
+</div>
+<div class="Widget-after-contents">
+No trackbacks &middot; No comments
+</div>
+</article>
+<div class="Widget-bottom">
+</div>
 </div>
 </body>
 </html>
