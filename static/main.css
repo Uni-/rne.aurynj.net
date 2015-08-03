@@ -38,7 +38,7 @@ body, margin, .Container {
 	border-width: 1px;
 	border-radius: 0 0 20px 20px;
 	padding: 19px;
-	height: 39px;
+	min-height: 39px;
 	line-height: 39px;
 	background: white;
 }
@@ -64,7 +64,7 @@ body, margin, .Container {
 	border-width: 1px;
 	border-radius: 20px 20px 0 0;
 	padding: 19px;
-	height: 29px;
+	min-height: 29px;
 	line-height: 29px;
 	background: white;
 }
